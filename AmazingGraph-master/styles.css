@@ -1,0 +1,159 @@
+:root {
+    --orange: #D2872C;
+    --gray: #766F68;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 100px;
+}
+
+nav {
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: var(--orange);
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu li {
+    list-style-type: none;
+    margin-left: 25px;
+    font-size: 20px;
+    color: var(--gray);
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    width: 90%;
+    margin: 50px auto 0;
+}
+
+section {
+    width: 50%;
+    box-sizing: border-box;
+}
+
+section:first-child {
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 70px;
+    margin: 0;
+    color: var(--gray);
+}
+
+p {
+    font-size: 20px;
+    max-width: 300px;
+    color: var(--gray);
+    margin: 20px 0 40px;
+}
+
+button {
+    background-color: var(--orange);
+    color: white;
+    font-size: 19px;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    height: 50px;
+    width: 40%;
+    cursor: pointer;
+}
+
+.img {
+    width: 100%;
+}
+
+@media(min-width: 761px) {
+    .icon {
+        display: none!important;
+    }
+}
+
+@media(max-width: 760px) {
+    .logo {
+        font-size: 25px;
+    }
+
+    nav {
+        position: relative;
+        padding-left: 20px; 
+    }
+
+    .icon {
+        display: block;
+        position: absolute;
+        top: 40px;
+        right: 20px;
+        font-size: 20px;
+        color: var(--gray);
+    }
+    
+    .menu li {
+        display: none;
+    }
+
+    main {
+        margin-top: 20px;
+        width: 80%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    section:first-child {
+        padding-left: 0;
+    }
+
+    h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    p {
+        font-size: 15px;
+        text-align: center;
+        max-width: 80%;
+        margin: 20px auto 40px;
+    }
+    button {
+        width: 80%; 
+        margin: 0 auto;
+    }
+}
